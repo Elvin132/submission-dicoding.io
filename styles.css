@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #cfd9df;
+}
+
+/* Bagian Header */
+header.navbar-container .jumbotron {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+header.navbar-container {
+    background-color: #2c3e50;
+    box-shadow: 0 4px 10px rgba(5, 216, 231, 0.2);
+    z-index: 9999;
+}
+
+header.navbar-container .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+header.navbar-container .nav-list li a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header.navbar-container .nav-list li a:hover {
+    background-color: white;
+    padding: 15px;
+    border-radius: 18px;
+    color: #1abc9c;
+    transition: all .3s ease-in-out;
+}
+
+/* Bagian Main */
+
+/* About Me */
+.aboutme {
+    text-decoration: none;
+    color: blue;
+}
+
+.aboutme:hover {
+    color: #1abc9c;
+}
