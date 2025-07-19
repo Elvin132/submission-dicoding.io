@@ -1,67 +1,59 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #cfd9df;
-}
-
-/* Bagian Header */
-header.navbar-container .jumbotron {
-    font-size: 20px;
-    color: white;
-    text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header.navbar-container {
-    background-color: #2c3e50;
-    box-shadow: 0 4px 10px rgba(5, 216, 231, 0.2);
-    z-index: 9999;
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
 }
 
-header.navbar-container .nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  padding: 15px;
+  text-transform: capitalize;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
 }
 
 header.navbar-container .nav-list li {
-    list-style-type: none;
-    margin-right: 20px;
-    padding: 10px;
+  list-style-type: none;
 }
 
 header.navbar-container .nav-list li a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s ease-in-out;
 }
 
-header.navbar-container .nav-list li a:hover {
-    background-color: white;
-    padding: 15px;
-    border-radius: 18px;
-    color: #1abc9c;
-    transition: all .3s ease-in-out;
-}
-
-/* Bagian Main */
-
-/* About Me */
-.aboutme {
-    text-decoration: none;
-    color: blue;
-}
-
-.aboutme:hover {
-    color: #1abc9c;
+header.navbar-container .nav-list li:hover a {
+  background-color: #425c77;
+  color: white;
 }
